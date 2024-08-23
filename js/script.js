@@ -27,7 +27,7 @@ fetch(DATA_URL)
     return response.json();
   })
   .then(data => {
-    showData(data); // Llama a la función showData con los datos obtenidos
+    showData(data.students); // Llama a la función showData con los datos obtenidos
   })
   .catch(error => {
     console.error('Hubo un problema con el fetch:', error);
